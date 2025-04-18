@@ -100,4 +100,4 @@ jobs:
         env:
           COMMIT_HASH: ${{ github.sha }}
         run: |
-          kubectl set image deployment/belasting-deploy fastapicicdexample=$IMAGE_NAME_LOWER:$COMMIT_HASH -n bela-test
+          kubectl set image deployment/belasting-deploy hoe-repository=$IMAGE_NAME_LOWER:$COMMIT_HASH -n bela-test
